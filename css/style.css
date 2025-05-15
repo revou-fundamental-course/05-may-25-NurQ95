@@ -1,0 +1,276 @@
+* {
+    box-sizing:border-box;
+    border-width: 0;
+    border-style: solid;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*body*/
+body {
+    background-color: antiquewhite;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: serif;
+    padding-right: 50px;
+}
+#home{
+    font-size: 23px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+#main-logo {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+/* Nav Style */
+nav {
+    display: flex;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+section {
+    text-align: center;
+}
+
+/*box benner*/
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*box koleksi*/
+.boxkoleksi1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxkoleksi2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+article {
+    padding: 3vh;
+}
+
+article h1 {
+    text-align: center;
+    font-size: 7vh;
+}
+
+/*styling benner*/
+.slide-gambar {
+    width: 70vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+aside {
+    width: 30vw;
+    padding-right: 5vw;
+}
+
+/*styling contact us*/
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    background-color: aquamarine;
+}
+
+.contact-us p {
+    text-align: justify;
+    margin-bottom: 8vh;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    height: 5vh;
+}
+
+#question {
+    height: 15vh;
+}
+
+#category {
+    padding: 4rem 4rem 4rem 0;   
+}
+
+#category h1,  #category h4{    
+    font-size: 4vh;
+    text-align: center;
+}
+
+#category h1 {
+    background-color: #d5bdaf;
+    padding: 3vh 0 3vh 0;
+    width: 100vw;
+}
+
+#category ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 10% 0 10%;
+}
+
+li {
+    list-style-type: none;
+}
+
+#category li {
+    background-color: #d6ccc2;
+    font-size: larger;
+    margin: 2vh;
+    padding: 2vh;
+    width: 90%;
+
+    display: flex;
+    align-items: center;  /* Vertically center items */
+    gap: 1rem;
+}
+
+#category li img {
+    width: 25%;
+    padding-right: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+#call-us h1, #call-us h3 {
+    text-align: center;
+}
+
+.visit-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+}
+
+.visit-us button {
+    width: 30vw;
+    height: 5vh;
+}
+
+footer {
+    background-color: pink;
+    bottom: 0;
+    padding: 2rem 4rem 1rem 4rem; 
+    text-align: center;
+}
+
+footer .social-media, footer .footer-text {
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+
+footer p {
+    text-align: center;   
+}
+
+
+
+/* Kontainer Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Sembunyikan gambar secara default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posisi "next button" di sebelah kanan */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, tambahkan warna background black sedikit transparan */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: rgb(37, 37, 37);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animasi Fading */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Untuk screen mobile (hp dan tablet) */
+@media (max-width: 768px) {
+  
+}

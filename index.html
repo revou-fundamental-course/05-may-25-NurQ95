@@ -1,11 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anti Desain & Art</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-</body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <!-- Logo -->
+        <img id="main-logo" src="img/logo.png" alt="Logo Anti Desain & Art" />
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#call-us">Call Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Content -->
+        <section id="home">
+            <header>
+                <h1>Anti Desain & Art</h1>
+            </header>
+
+            <h4>Ini koleksi kami , Senang berbagi dengan anda</h4>
+
+            <!-- Banner & Form Content -->
+            <div class="box">
+          <div class="slide-gambar">
+
+            <!-- Kontainer Slideshow -->
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="img/img1.jpeg" style="width: 100%" />
+              </div>
+
+              <div class="mySlides fade">
+                <img src="img/img2.jpeg" style="width: 100%" />
+              </div>
+
+              <div class="mySlides fade">
+                <img src="img/img3.jpeg" style="width: 100%" />
+              </div>
+
+              <div class="mySlides fade">
+                <img src="img/img4.jpeg" style="width: 100%" />
+              </div>
+            </div>
+            <br />
+
+            <p>
+              Untuk lebih lengkapnya silahkan lihat di koleksi kami dibawah ini yaa ,
+              Jika ada yang ingin ditanyakan silahkan isi form di samping ini ,
+              Dan apabila masih ingin tau lebih lanjut silahkan kepoin kami di sosial media dibawah ini yuks
+            </p>
+          </div>
+
+          <!--form contact us dan validasi-->
+          <aside>
+            <section class="contact-us">
+              <h3>Hubungi Kami</h3>
+              <form
+                name="myForm"
+                action=""
+                onsubmit="return validateForm()"
+                method="post"
+              >
+                <label for="name">Nama</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Masukkan nama anda"
+                />
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Masukkan e-mail anda"
+                />
+                <label for="question">Komentar</label>
+                <input
+                  type="textarea"
+                  name="question"
+                  id="question"
+                  placeholder=""
+                />
+
+                <input type="submit" value="Kirim" />
+              </form>
+            </section>
+          </aside>
+        </div>
+      </div>
+
+      <!--koleksi produk-->
+      <div id="collections">
+        <h1>
+          Berikut Adalah Beberapa Koleksi Kami Yang Sudah Kami Buat
+        </h1>
+
+        <div class="boxkoleksi1">
+          <img src="img/koleksi-1.jpeg" style="width: 23%" />
+          <img src="img/koleksi-2.jpeg" style="width: 23%" />
+          <img src="img/koleksi-3.jpeg" style="width: 23%" />
+          <img src="img/koleksi-8.jpeg" style="width: 23%" />    
+        </div>
+        <br/>
+        <div class="boxkoleksi2">
+          <img src="img/koleksi-4.jpeg" style="width: 23%" />
+          <img src="img/koleksi-5.jpeg" style="width: 23%" />
+          <img src="img/koleksi-6.jpeg" style="width: 23%" />
+          <img src="img/koleksi-7.jpeg" style="width: 23%" />    
+        </div>
+      </div>
+
+      <hr>
+
+      <!--call us-->
+      <div id="call-us">
+        <h1>Ingin Tau Lebih Lanjut Tentang Kami</h1>
+        <h2>Kepoin Kami Yuks...</h2>
+        <h3>Cek Sosial Media dan Marketplace Kami Disini Yaa..!!!</h3>
+        <h1>!!!!!!!</h1>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social-media">
+
+        <!-- Shopee -->
+        <a href="https://shopee.co.id/anti_hijab?categoryId=100014&entryPoint=ShopByPDP&itemId=12232426850">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="40px"
+            height="40px"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 25.080078 18 C 28.920078 18 31.799062 20.060938 32.039062 20.210938 L 31.009766 21.880859 C 30.759766 21.710859 30.310625 21.439844 30.140625 21.339844 C 29.120625 20.789844 27.240078 19.970703 25.080078 19.970703 C 21.830078 19.970703 19.480469 21.77 19.480469 24.25 C 19.480469 26.72 21.660234 27.699766 25.240234 29.009766 C 28.870234 30.329766 32.970703 31.829609 32.970703 36.599609 C 32.970703 40.189609 29.430156 43.009766 24.910156 43.009766 C 20.920156 43.009766 17.640078 40.560156 16.830078 39.910156 L 17.939453 38.259766 C 17.969453 38.289766 21.160156 41.029297 24.910156 41.029297 C 28.270156 41.029297 31 39.039609 31 36.599609 C 31 33.439609 28.570547 32.319375 24.560547 30.859375 C 21.260547 29.649375 17.509766 28.28 17.509766 24.25 C 17.509766 20.69 20.760078 18 25.080078 18 z"
+            ></path>
+          </svg>
+        </a>
+
+        <!-- Instagram    -->
+        <a href="https://www.instagram.com/anti_designart/?utm_source=qr&igsh=ZjVkOHJjeWU3aDY4#">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 5 60 60"
+            enable-background="new 0 0 56.7 56.7"
+            xml:space="preserve"
+            height="50px"
+          >
+            <g>
+              <path
+                d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                        c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"
+              />
+              <circle cx="41.5" cy="16.4" r="2.9" />
+              <path
+                d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                        h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                        s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                        c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-text">
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+      </div>
+      <p>Anti Desan & Art</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
